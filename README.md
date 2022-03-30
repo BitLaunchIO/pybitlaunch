@@ -148,7 +148,7 @@ newServer = pybitlaunch.Server(
     sizeID = "nibble-1024",
     regionID = "lon1",
     password = "MySecurePassword", # Optional must use sshKeys instead
-    sshKeys = sshKeyObj, # Optional must use password instead
+    sshKeys = [sshKeyObj["id"]], # Optional must use password instead
     initscript = None # Optional
 )
 
